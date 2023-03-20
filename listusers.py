@@ -4,10 +4,9 @@ import os
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] ='...keys/key.json'
 
 # Set the project ID and dataset ID
-project_id = 'test-3-project'
-dataset_id = "test"
-table_id = "test_people"
-# client = bigquery.Client(project=project_id,credentials=credentials)
+project_id = 'learned-answer-379305'
+dataset_id = "test_1"
+table_id = "test_1_people"
 client = bigquery.Client()
 # Get a reference to the table you want to set access controls for
 table_ref = client.dataset(dataset_id).table(table_id)
